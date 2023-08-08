@@ -1,0 +1,35 @@
+div{
+	height:400px;
+	width:600px;
+	border:2px solid black;
+	margin:80px auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:relative;
+	background-image:url('Consultations.jpg');
+	background-repeat:no-repeat;
+	background-position:30% 35%;
+}
+div > h2{
+	font-size:40px;
+	color:whitesmoke;
+	position:absolute;
+}
+div > p{
+	color:whitesmoke;
+	position:absolute;
+	font-size:20px;
+	margin-top:120px;
+}
+div::before{
+	content:'';
+	height:100%;
+	width:100%;
+	background-color:rgba(0,0,0,.4);
+	position:absolute;
+	z-index:0;
+}
+div:hover{
+	background-size:cover;
+}
